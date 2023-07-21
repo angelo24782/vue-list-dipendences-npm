@@ -2,7 +2,7 @@
 
 /* Define the style for the active link */
 .active-link {
-  background-color: #00aaff;
+  background-color: #00aaff !important;
   /* Replace with your desired background color */
   color: #fff;
   /* Optionally, you can change the text color to make it more prominent */
