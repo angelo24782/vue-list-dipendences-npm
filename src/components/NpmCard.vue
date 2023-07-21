@@ -9,7 +9,10 @@
         >
       </div>
     </div>
-    <div class="d-flex justify-content-end">
+    <div class="align-items-center d-flex justify-content-between">
+      <p class="badge bg-secondary p-2 mt-2">
+        <i class="bi bi-tag-fill"></i> {{ props.packageData.licenses }}
+      </p>
       <p class="badge bg-secondary p-2 mt-2">Version: {{ props.packageData.version }}</p>
     </div>
   </div>
@@ -23,6 +26,7 @@ interface PackageData {
   repository: string
   version: string | null
   image: string
+  licenses: string
 }
 
 const props = defineProps({

@@ -8,6 +8,7 @@ interface PackageData {
   repository: string
   version: string | null
   image: string
+  licenses: string
 }
 
 const npmPackages = ref<PackageData[]>([])
@@ -34,7 +35,8 @@ onMounted(async () => {
         key: getPackageName(key),
         repository: item.repository,
         version: getPackageVersion(key),
-        image: item.image
+        image: item.image,
+        licenses: item.licenses
       }
     })
   } catch (error) {
