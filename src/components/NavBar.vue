@@ -50,10 +50,4 @@
 
 <script setup lang="ts"></script>
 
-<style>
-/* Define the style for the active link */
-.active-link {
-  background-color: #00aaff; /* Replace with your desired background color */
-  color: #fff; /* Optionally, you can change the text color to make it more prominent */
-}
-</style>
+<style></style>
